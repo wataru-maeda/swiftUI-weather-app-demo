@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		070D6ED51253AED212A182C2 /* Pods_swiftUI_weather_app_demoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDB12D3995D15151B1145DDE /* Pods_swiftUI_weather_app_demoTests.framework */; };
 		184E0B87D0FDB0C1E0C3C89F /* Pods_swiftUI_weather_app_demo_swiftUI_weather_app_demoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED1ADE9180742BD27FD2F968 /* Pods_swiftUI_weather_app_demo_swiftUI_weather_app_demoUITests.framework */; };
-		8D09851D2075587EAA1CA4B0 /* Pods_swiftUI_weather_app_demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FFFBE60377696DEA24AB6CB /* Pods_swiftUI_weather_app_demo.framework */; };
+		8D09851D2075587EAA1CA4B0 /* Pods_swiftUI_weather_app_demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FFFBE60377696DEA24AB6CB /* Pods_swiftUI_weather_app_demo.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		A5C4FE1A2471F2D400E1FEB5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C4FE192471F2D400E1FEB5 /* AppDelegate.swift */; };
 		A5C4FE1C2471F2D400E1FEB5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C4FE1B2471F2D400E1FEB5 /* SceneDelegate.swift */; };
 		A5C4FE1E2471F2D400E1FEB5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C4FE1D2471F2D400E1FEB5 /* ContentView.swift */; };
