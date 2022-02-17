@@ -18,7 +18,7 @@ struct WeatherSummaryView: View {
   }
 
   var body: some View {
-    VStack(alignment: .leading) {
+    VStack(alignment: .center) {
       // segment control section
       Picker(selection: $selectedIndex, label: Text("")) {
         ForEach(0..<items.count) {
@@ -30,24 +30,32 @@ struct WeatherSummaryView: View {
         EdgeInsets(
           top: 24,
           leading: 16,
-          bottom: 24,
+          bottom: 0,
           trailing: 16
         )
       )
 
       // weather section
-      HStack {
-        GeometryReader { geometry in
-          Image("sun")
-            .resizable()
-            .scaledToFit()
-            .frame(width: geometry.size.width / 2, height: geometry.size.height / 4)
-        }
-        VStack {
-          Text("123")
-          Text("123")
+      HStack(alignment: .center) {
+        Image("sun")
+          .resizable()
+          .scaledToFit()
+          .frame(width: UIScreen.main.bounds.width / 3,
+                 height: 140)
+          .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 24))
+        VStack(alignment: .trailing, spacing: 0) {
+          HStack(alignment: .lastTextBaseline, spacing: 4) {
+            Text("25").font(.system(size: 58)).bold().foregroundColor(.orange)
+            Text("℃").font(.system(size: 40)).bold().foregroundColor(.yellow)
+          }
+          HStack(alignment: .bottom, spacing: 0) {
+            Image("humidity").resizable().scaledToFit().frame(width: 32, height: 32).padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 4))
+            Text("30").font(.system(size: 16)).bold().foregroundColor(.blue)
+            Text("%").font(.system(size: 16)).bold().foregroundColor(.cyan)
+          }
         }
       }
+      .padding(EdgeInsets(top: 0, leading: 0, bottom: 16, trailing: 0))
     }
     .frame(maxWidth: .infinity)
     .background(.white)

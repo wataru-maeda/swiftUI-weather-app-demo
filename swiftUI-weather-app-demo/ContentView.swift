@@ -30,6 +30,7 @@ struct ContentView: View {
                 trailing: 0
               )
             )
+          Spacer()
         }
       }
 
