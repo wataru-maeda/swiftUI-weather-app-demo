@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "timeFrame": "Morning",
+    "weatherType": "Sunny",
+    "tempature": 15.5,
+    "humidity": 20
+  },
+  {
+    "id": 2,
+    "timeFrame": "Afternoon",
+    "weatherType": "Rainy",
+    "tempature": 15.5,
+    "humidity": 20
+  },
+  {
+    "id": 3,
+    "timeFrame": "Evening",
+    "weatherType": "Cloudy",
+    "tempature": 15.5,
+    "humidity": 20
+  },
+  {
+    "id": 4,
+    "timeFrame": "Overninght",
+    "weatherType": "Snowy",
+    "tempature": 15.5,
+    "humidity": 20
+  }
+]

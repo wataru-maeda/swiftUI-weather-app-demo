@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
+  let data: [Weather] = load("weather.json")
+
   init() {
     UINavigationBar.appearance().titleTextAttributes = [.font: UIFont(name: "pilgi", size: 24)!, .foregroundColor: #colorLiteral(red: 0.9449525476, green: 0.2824411094, blue: 0.4755416512, alpha: 1)]
   }
@@ -26,10 +28,11 @@ struct ContentView: View {
               EdgeInsets(
                 top: 16,
                 leading: 0,
-                bottom: 24,
+                bottom: -24,
                 trailing: 0
               )
             )
+          WeatherTableView(data: data)
           Spacer()
         }
       }
